@@ -1,0 +1,230 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import 'bootstrap';
+
+body {
+  background-color: #fafafa;
+  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+  a {
+    color: #125688;
+  }
+}
+
+.navbar-default {
+  background-color: #fff;
+  height: 54px;
+  .navbar-nav li a {
+    color: #125688;
+  }
+}
+
+.navbar-container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.posts-wrapper {
+  margin: 0 auto;
+  max-width: 642px;
+  width: 100%;
+}
+
+.post {
+  background-color: #fff;
+  border-color: #edeeee;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  margin-bottom: 60px;
+}
+
+.post-head {
+  height: 40px;
+  padding: 14px 20px;
+  color: #125688;
+  font-size: 15px;
+  line-height: 18px;
+  .name {
+    display: block;
+  }
+}
+
+.image {
+  border-bottom: 1px solid #eeefef;
+  border-top: 1px solid #eeefef;
+}
+
+.caption {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  display: inline;
+}
+
+.form-wrapper {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #eeefef;
+  border-radius: 3px;
+}
+
+.edit-links {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.registration-bg {
+  height: 100%;
+  padding-top: 4em;
+  background-image: url('https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2069&q=80');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/05/Love-Wallpaper-For-Desktop-Full-Screen-HD.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#paginator {
+  color: #4090DB;
+  height: 120px;
+  width: 120px;
+  margin: 60px auto 40px;
+  position: relative;
+  display: table;
+  border: 2px solid #4090DB;
+  border-radius: 50%;
+  :hover {
+    border: 1px solid #2D6DA8;
+    border-radius: 50%;
+  }
+}
+
+#load_more {
+  display: table-cell;
+  font-size: 12px;
+  padding: 0px 9px;
+  vertical-align: middle;
+  text-decoration: none;
+  a :hover {
+    color: #2D6DA8;
+  }
+}
+
+.comments {
+  .paginator {
+    margin: 0.5em;
+    .more-comments {
+      color: #A5A7AA;
+    }
+  }
+}
+
+.user-name, .comment-content {
+  display: inline;
+}
+
+.user-name {
+  font-weight: 500;
+  margin-right: 0.3em;
+  color: #125688;
+  margin-left: 3px;
+}
+
+.user-name:hover {
+  text-decoration: none;
+}
+
+.delete-comment {
+  float: right;
+  color: #515151;
+  margin-right: 3px;
+}
+
+.delete-comment:hover {
+  text-decoration: none;
+}
+
+#user_avatar {
+  margin: 20px auto;
+}
+
+.profile-header {
+  padding: 20px 0;
+}
+
+.profile-image {
+  margin: 20px auto;
+  height: 152px;
+  width: 152px;
+}
+
+.user-name-and-follow {
+  display: inline;
+}
+
+.profile-user-name {
+  display: inline;
+}
+
+.edit-button {
+  border-color: #818488;
+  color: #818488;
+  margin-left: 20px;
+  display: inline;
+}
+
+.profile-bio {
+  margin-top: 20px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.likes {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.fas.fa-heart {
+  color: red;
+}
+
+.far {
+  color: #818488;
+}
+
+.fa-heart:hover {
+  text-decoration: none !important;
+  color: red;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photogram</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <script src="https://kit.fontawesome.com/287c348a81.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= render 'layouts/navbar' %>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <% flash.each do |type, msg| %>
+          <div class='d-flex justify-content-between alert alert-<%="#{type}"%>'>
+            <%= content_tag :div, msg, :id => "flash_#{type}" if msg.is_a?(String) %>
+            <a href="#" class="close" data-dismiss="alert">&#10006</a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    
+    <%= yield %>
+    
+
+  </body>
+</html>

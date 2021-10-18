@@ -1,0 +1,11 @@
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <%= current_user.notifications.count %>
+  <i class="fas fa-flag"></i>
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li class="dropdown-item text-center" href="#">Notification</li>
+  <li class="text-center">
+    <%= link_to 'View All', notifications_path %>
+  </li>
+  <%= render current_user.notifications.order('created_at DESC').last(5) %>
+</ul>

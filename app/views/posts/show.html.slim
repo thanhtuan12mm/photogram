@@ -1,0 +1,7 @@
+= render 'post', post: @post
+
+.text-center.mb-3
+  => link_to 'Back', posts_path, class: 'btn btn-secondary'
+  - if @post.user_id == current_user.id
+    => link_to 'Edit', edit_post_path(@post), class:'btn btn-success'
+    = link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
